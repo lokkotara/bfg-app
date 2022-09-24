@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './style/index.scss';
+import { store } from './redux/store';
+import { Provider } from "react-redux";
+import Home from "./pages/Home/Home";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <Home />
+    </Provider>
   </React.StrictMode>
 );
 

@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+
+.green {
+  background-color: green!important;
+}
+.red {
+  background-color: red!important;
+}
+.blue {
+  background-color: blue!important;
+}
+.white {
+  background-color: white!important;
+}
+
+.btn {
+  width: 5rem;
+  height: 2.5rem;
+  background: gray;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  offset: none;
+}
