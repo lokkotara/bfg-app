@@ -42,7 +42,7 @@ export default function SecondDice() {
     if (inputValue >= 0 && inputValue < 10) setColor("red");
     if (inputValue >= 10 && inputValue < 25) setColor("blue");
     if (inputValue >= 25) setColor("green");
-    if (message === "pending" && inputValue) {
+    if (message === "pending") {
       displayValue(color);
       dispatch(launchSuccess());
     } else if (message === "reset") {

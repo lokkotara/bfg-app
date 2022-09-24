@@ -2,7 +2,7 @@ import {createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
   status: 'starting',
-  inputValue:undefined
+  inputValue:0
 };
 
 export const launchSlice = createSlice({

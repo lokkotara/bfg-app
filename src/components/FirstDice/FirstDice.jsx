@@ -38,7 +38,7 @@ export default function FirstDice() {
     if (inputValue >= 0 && inputValue < 5) setColor("red");
     if (inputValue >= 5 && inputValue < 20) setColor("blue");
     if (inputValue >= 20) setColor("green");
-    if (message === 'pending' && inputValue) {
+    if (message === 'pending') {
       displayValue(color);
       dispatch(launchSuccess());
     }
@@ -48,8 +48,9 @@ export default function FirstDice() {
   }, [inputValue, message]);
 
   return (
-    <div className={"dice "+color}>
-      <p>{value}</p>
+    <div className={"dice " + color}>
+
+      <p className="vValue">{value}</p>
     </div>
   );
 }

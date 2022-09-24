@@ -25,3 +25,72 @@
   margin-top: 2rem;
   gap: 1rem;
 }
+
+.upperB {
+  color: red;
+}
+.upperF {
+  color: blue;
+}
+.upperG {
+  color: green;
+}
+h1 {
+  font-size: 4rem;
+}
+label {
+  font-size: 1.5rem;
+}
+#inputValue {
+  margin-top: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  -moz-appearance: textfield;
+  line-height: 4rem;
+  font-size: 3rem;
+  text-align: center;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inputLabelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resultColumn {
+  margin: 0.5rem auto;
+  padding: 0 0.5rem;
+  padding-top: 1rem;
+  background-color: #656f83;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.dice {
+  position: relative;
+}
+
+img {
+  width: 4rem;
+  fill: red;
+  cursor: pointer;
+}
+input {
+  margin: 0 2rem;
+}
+svg {
+  font-size: 1rem;
+  fill: white;
+  z-index: 1;
+}
+.vValue {
+  position: absolute;
+  z-index: 100;
+}
+.svgDice {
+  width: 4rem;
+}
