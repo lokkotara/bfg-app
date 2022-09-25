@@ -43,7 +43,7 @@ export default function ThirdDice() {
     if (inputValue >= 0 && inputValue < 15) setColor("red");
     if (inputValue >= 15 && inputValue < 30) setColor("blue");
     if (inputValue >= 30) setColor("green");
-    if (message === "pending" && inputValue) {
+    if (message === "pending") {
       displayValue(color);
       dispatch(launchSuccess());
     } else if (message === "reset") {
