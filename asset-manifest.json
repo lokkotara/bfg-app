@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bfg-app/static/css/main.7a2ea75b.css",
+    "main.js": "/bfg-app/static/js/main.dbdae06d.js",
+    "static/js/787.e3c0c43d.chunk.js": "/bfg-app/static/js/787.e3c0c43d.chunk.js",
+    "index.html": "/bfg-app/index.html",
+    "main.7a2ea75b.css.map": "/bfg-app/static/css/main.7a2ea75b.css.map",
+    "main.dbdae06d.js.map": "/bfg-app/static/js/main.dbdae06d.js.map",
+    "787.e3c0c43d.chunk.js.map": "/bfg-app/static/js/787.e3c0c43d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a2ea75b.css",
+    "static/js/main.dbdae06d.js"
+  ]
+}
