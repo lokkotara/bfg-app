@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/bfg-app/static/css/main.7a2ea75b.css",
-    "main.js": "/bfg-app/static/js/main.dbdae06d.js",
+    "main.css": "/bfg-app/static/css/main.5977cc92.css",
+    "main.js": "/bfg-app/static/js/main.c780600a.js",
     "static/js/787.e3c0c43d.chunk.js": "/bfg-app/static/js/787.e3c0c43d.chunk.js",
+    "static/media/plus.svg": "/bfg-app/static/media/plus.f1aa24d50267767bff2981b3fbcf78ad.svg",
     "index.html": "/bfg-app/index.html",
-    "main.7a2ea75b.css.map": "/bfg-app/static/css/main.7a2ea75b.css.map",
-    "main.dbdae06d.js.map": "/bfg-app/static/js/main.dbdae06d.js.map",
+    "static/media/minus.svg": "/bfg-app/static/media/minus.d771695762ad670373e2c57c1356dcea.svg",
+    "main.5977cc92.css.map": "/bfg-app/static/css/main.5977cc92.css.map",
+    "main.c780600a.js.map": "/bfg-app/static/js/main.c780600a.js.map",
     "787.e3c0c43d.chunk.js.map": "/bfg-app/static/js/787.e3c0c43d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a2ea75b.css",
-    "static/js/main.dbdae06d.js"
+    "static/css/main.5977cc92.css",
+    "static/js/main.c780600a.js"
   ]
 }
