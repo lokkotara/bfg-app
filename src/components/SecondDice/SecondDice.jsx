@@ -1,28 +1,37 @@
 import {useState, useEffect} from 'react';
 import { useSelector, useDispatch } from "react-redux";
+import { getRandomInt } from "../../services/service";
 import {
-  launchSuccess,
+
   selectState,
   getInputValue,
+  setDice2,
+  getDice2,
+  getGreenPercent,
+  getBluePercent,
+  getRedPercent,
 } from "../../features/Launch/launchSlice";
 
 export default function SecondDice() {
   const [color, setColor] = useState("white");
-  const [value, setValue] = useState("");
+    const value = useSelector(getDice2);
   const message = useSelector(selectState);
+  const percentGreen = useSelector(getGreenPercent);
+  const percentBlue = useSelector(getBluePercent);
+  const percentRed = useSelector(getRedPercent);
   const inputValue = useSelector(getInputValue);
   const dispatch = useDispatch();
 
   const displayValue = (color) => {
     switch (color) {
       case "green":
-        setValue(getRandomInt(70));
+        dispatch(setDice2(getRandomInt(percentGreen)));
         break;
       case "blue":
-        setValue(getRandomInt(50));
+        dispatch(setDice2(getRandomInt(percentBlue)));
         break;
       case "red":
-        setValue(getRandomInt(30));
+        dispatch(setDice2(getRandomInt(percentRed)));
         break;
 
       default:
@@ -30,12 +39,8 @@ export default function SecondDice() {
     }
   };
 
-  const getRandomInt = (percent) => {
-    return Math.floor(Math.random() * 100) < percent ? 1 : 0;
-  };
-
   const resetValue = () => {
-    setValue("");
+    dispatch(setDice2(""));
   };
 
   useEffect(() => {
@@ -44,14 +49,13 @@ export default function SecondDice() {
     if (inputValue >= 25) setColor("green");
     if (message === "pending") {
       displayValue(color);
-      dispatch(launchSuccess());
     } else if (message === "reset") {
       resetValue();
     }
   }, [inputValue, message]);
   return (
     <div className={"dice " + color}>
-      <p>{value}</p>
+      <p className="vValue">{value}</p>
     </div>
   );
 }
